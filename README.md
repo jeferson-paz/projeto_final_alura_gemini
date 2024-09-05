@@ -40,7 +40,7 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
 3. **Abra o arquivo `https://jeferson-paz.github.io/projeto_final_alura_gemini/` no seu navegador**. 🌐
 
 ## Uso
-Após seguir os passos de instalação, basta abrir o arquivo `projeto_final_alura_gemini` no seu navegador de preferência. A página será carregada com um background temático, um título animado e um campo de busca interativo.
+Após seguir os passos de instalação, basta abrir o arquivo `https://jeferson-paz.github.io/projeto_final_alura_gemini/` no seu navegador de preferência. A página será carregada com um background temático, um título animado e um campo de busca interativo.
 
 - **Busca de Livros:** Utilize a barra de busca para procurar livros na biblioteca virtual. 🔍
 - **Visualização de Detalhes:** Clique nos resultados para ver mais detalhes sobre cada livro. 📖
