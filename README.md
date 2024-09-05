@@ -35,7 +35,7 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
    ```
 2. **Navegue até o diretório do projeto**:
    ```bash
-   projeto_final_alura_gemini
+   https://github.com/jeferson-paz/projeto_final_alura_gemini
    ```
 3. **Abra o arquivo `https://jeferson-paz.github.io/projeto_final_alura_gemini/` no seu navegador**. 🌐
 
