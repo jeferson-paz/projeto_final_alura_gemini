@@ -37,7 +37,7 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
    ```bash
    projeto_final_alura_gemini
    ```
-3. **Abra o arquivo `projeto_final_alura_gemini` no seu navegador**. 🌐
+3. **Abra o arquivo `https://jeferson-paz.github.io/projeto_final_alura_gemini/` no seu navegador**. 🌐
 
 ## Uso
 Após seguir os passos de instalação, basta abrir o arquivo `projeto_final_alura_gemini` no seu navegador de preferência. A página será carregada com um background temático, um título animado e um campo de busca interativo.
