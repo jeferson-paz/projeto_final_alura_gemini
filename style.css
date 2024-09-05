@@ -1,0 +1,357 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Cores principais */
+:root {
+    --cor-principal: #333333; /* Cinza escuro para títulos e textos importantes */
+    --cor-secundaria: #F5F5DC; /* Creme para o fundo e elementos neutros */
+    --cor-acento: #B26600; /* Laranja para botões e links */
+    --cor-texto: #444444; /* Cinza médio para o texto principal */
+}
+
+/* Estilos globais */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte do corpo do texto */
+    background-image: url('img/background.jpg'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo, mas com margem */
+    height: auto; /* Remove o preenchimento total da viewport */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px 0; /* Adiciona espaçamento na parte superior e inferior */
+}
+
+/* Define a animação para o movimento do h1 */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Move o h1 para a esquerda fora da tela */
+        opacity: 0; /* Torna o h1 invisível */
+    }
+    100% {
+        transform: translateX(0); /* Move o h1 para a posição original */
+        opacity: 1; /* Torna o h1 visível */
+    }
+}
+
+/* Animação para fazer o h1 oscilar suavemente */
+@keyframes oscillate {
+    0%, 100% {
+        transform: translateX(0); /* Posição original */
+    }
+    50% {
+        transform: translateX(10px); /* Move o h1 para a direita */
+    }
+}
+
+h1 {
+    font-size: 2.5rem; /* Define o tamanho da fonte do h1 */
+    color: var(--cor-secundaria); /* Usa a cor secundária para o texto */
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.4rem; /* Adiciona espaçamento entre as letras */
+    margin-top: 40px; /* Adiciona margem superior ao h1 */
+    animation: slideIn 1s ease-out, oscillate 2s ease-in-out infinite; /* Aplica as animações */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra com a cor --cor-secundaria */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa o Flexbox para layout interno */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    width: 100%; /* Garante que as seções ocupem toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima das seções */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 100%; /* Ajusta a largura para 100% do container pai */
+    max-width: 30rem; /* Define a largura máxima dos inputs */
+    border: 1px solid #ddd; /* Borda leve e cinza */
+    padding: 1rem; /* Espaçamento interno do input */
+    border-radius: 1.5rem; /* Cantos arredondados do input */
+    margin-bottom: 1rem; /* Espaçamento abaixo do input */
+    color: var(--cor-texto); /* Cor do texto do input */
+    font-size: 1rem; /* Tamanho da fonte dentro do input */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a cor da borda e sombra */
+}
+
+/* Efeito ao passar o cursor sobre o input */
+section input:hover {
+    border-color: var(--cor-acento-hover); /* Cor da borda ao passar o cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao passar o cursor */
+}
+
+/* Efeito ao focar no input */
+section input:focus {
+    border-color: var(--cor-acento); /* Cor da borda quando o input está em foco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno dos botões */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 1.5rem; /* Cantos arredondados dos botões */
+    background-color: var(--cor-acento); /* Cor de fundo dos botões */
+    color: var(--cor-secundaria); /* Cor do texto dos botões */
+    font-size: 1rem; /* Tamanho da fonte dentro dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a cor de fundo e sombra */
+}
+
+/* Efeito ao passar o cursor sobre o botão */
+section button:hover {
+    background-color: var(--cor-acento-hover); /* Cor de fundo ao passar o cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o cursor */
+}
+
+/* Efeito ao clicar no botão */
+section button:active {
+    background-color: var(--cor-acento-active); /* Cor de fundo quando o botão está pressionado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+}
+
+/* Estilo para os botões com tamanho específico */
+button {
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 5px; /* Espaçamento externo dos botões */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados dos botões */
+    font-size: 16px; /* Tamanho da fonte dentro dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 100%; /* Largura total disponível */
+    max-width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura de 46% da viewport */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo ultrapassar a altura */
+    margin-top: 1rem; /* Espaçamento superior */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Cantos arredondados */
+    background-color: var(--cor-secundaria); /* Cor de fundo */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.resultados-pesquisa:hover {
+    background-color: var(--cor-principal); /* Altere a cor de fundo ao passar o mouse */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: var(--cor-secundaria); /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Cantos arredondados dos itens */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento inferior entre itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para transformações e sombras */
+}
+
+.item-resultado:hover {
+    transform: scale(1.02); /* Leve aumento do tamanho ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte para os títulos */
+    color: var(--cor-principal); /* Cor do texto dos títulos */
+    transition: color 0.3s ease; /* Transição suave para a cor do título */
+}
+
+.item-resultado h2:hover {
+    color: var(--cor-acento); /* Muda a cor do título ao passar o mouse */
+}
+
+/* Estiliza as imagens dentro dos itens de resultado */
+.item-resultado img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do container pai */
+    max-width: 200px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Ajusta o ajuste da imagem para cobrir o container */
+    max-height: 300px; /* Altura máxima da imagem */
+    border-radius: 0.6rem; /* Cantos arredondados da imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve na imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para transformações e sombras */
+}
+
+.item-resultado img:hover {
+    transform: scale(1.05); /* Aumenta a escala da imagem ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para um efeito de projeção */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: var(--cor-acento); /* Cor dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor dos links */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: var(--cor-principal); /* Muda a cor dos links ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: var(--cor-texto); /* Cor do texto da descrição */
+    margin: 0.5rem 0; /* Espaçamento superior e inferior */
+    transition: color 0.3s ease; /* Transição suave para a cor da descrição */
+}
+
+.item-resultado:hover .descricao-meta {
+    color: var(--cor-acento); /* Muda a cor da descrição meta ao passar o mouse sobre o item de resultado */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: var(--cor-secundaria); /* Cor de fundo do rodapé */
+    color: var(--cor-texto); /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    position: relative; /* Posicionamento relativo para posicionamento de elementos internos */
+    bottom: 0; /* Posiciona o rodapé no fundo */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+footer p {
+    margin: 10px 0; /* Espaçamento superior e inferior para os parágrafos */
+}
+
+footer a {
+    color: var(--cor-texto); /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s; /* Transição suave para a cor dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+footer .social-links {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Exibe os itens de forma flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 1rem; /* Espaçamento entre os ícones */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+footer .social-links li {
+    display: flex; /* Exibe os itens de forma flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+footer .social-links a {
+    color: var(--cor-texto); /* Cor dos links dos ícones sociais */
+    font-size: 1.2rem; /* Tamanho da fonte dos ícones */
+    display: flex; /* Exibe os ícones de forma flexível */
+    align-items: center; /* Alinha os ícones verticalmente ao centro */
+    transition: color 0.3s; /* Transição suave para a cor dos ícones */
+}
+
+footer .social-links a i {
+    margin-right: 0.5rem; /* Espaçamento à direita dos ícones */
+}
+
+footer .social-links a:hover {
+    color: var(--cor-acento); /* Muda a cor dos ícones ao passar o mouse */
+}
+
+/* Estiliza a seção 'Sobre' */
+.sobre-container {
+    background-color: rgba(245, 245, 220, 0.5); /* Cor de fundo com transparência */
+    padding: 1rem; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%; /* Largura total */
+    max-width: 30rem; /* Largura máxima */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Efeito ao passar o cursor sobre a seção 'Sobre' */
+.sobre-container:hover {
+    background-color: var(--cor-secundaria); /* Leve alteração na cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para telas menores */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+
+    section input, section button {
+        width: 90%; /* Ajusta a largura dos inputs e botões */
+        max-width: none; /* Remove a largura máxima para dispositivos móveis */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Ajusta a largura da caixa de resultados */
+        max-width: none; /* Remove a largura máxima para dispositivos móveis */
+    }
+
+    .item-resultado img {
+        max-width: 100%; /* Ajusta a largura máxima da imagem */
+        max-height: 200px; /* Ajusta a altura máxima da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas muito pequenas */
+    }
+
+    section input, section button {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para inputs e botões */
+    }
+
+    footer .social-links {
+        flex-direction: column; /* Alinha os ícones verticalmente em telas pequenas */
+    }
+}
+
+/* Estiliza o header */
+header {
+    position: relative; /* Posicionamento relativo para elementos internos */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 40px; /* Margem superior para o título */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte para o título */
+    color: var(--cor-secundaria); /* Cor do título */
+    margin: 0; /* Remove a margem padrão */
+    position: relative; /* Necessário para o posicionamento do GIF */
+}
+
+/* Estiliza o contêiner do GIF */
+.gif-container {
+    position: absolute; /* Posicionamento absoluto para o GIF */
+    top: -40px; /* Ajuste a posição vertical do GIF em relação ao título */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente com ajuste de tradução */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+    z-index: 1; /* Garante que o GIF fique acima do título */
+}
+
+/* Estiliza o GIF */
+.gif-container img {
+    width: 100%; /* Ajusta o tamanho do GIF */
+    height: auto; /* Altura automática */
+}

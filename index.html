@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Biblioteca Virtual</title>
+</head>
+
+<body>
+    <header>
+        <!-- Contêiner para o GIF que aparece sobre o título -->
+        <div class="gif-container">
+            <img src="img/Gifs animados livro 1.gif" alt="Livro voando"> <!-- Altere o caminho do GIF -->
+        </div>
+        <!-- Título da página -->
+        <h1>Biblioteca Virtual</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Campo de entrada para pesquisa de livros -->
+            <input type="text" id="termo-pesquisa" placeholder="Pesquise seu livro">
+            <!-- Botão para realizar a pesquisa -->
+            <button id="botao-pesquisar">Pesquisar</button>
+            <!-- Botão para listar todos os livros -->
+            <button id="botao-listar-todos">Listar Todos</button>
+            <!-- Botão para mostrar a seção "Sobre" -->
+            <button id="botao-home">Sobre</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Seção "Sobre" com informações sobre o site -->
+            <div id="sobre" class="sobre-container">
+                <h2>Sobre</h2>
+                <p>Este site foi criado com o objetivo de fornecer informações detalhadas sobre livros, incluindo
+                    sinopses e avaliações. Aqui, você pode pesquisar seus livros favoritos e conhecer novas
+                    histórias!</p>
+                <p>Alguns dos livros que você encontrará aqui são as principais fontes para filmes e séries populares.
+                    Portanto, além de explorar os livros, você também pode descobrir as origens de suas adaptações
+                    audiovisuais favoritas.</p>
+                <p>Basta realizar a pesquisa pelo nome do livro que procura. A busca pode ser realizada por
+                    palavras-chave, mas é sempre recomendado digitar o nome corretamente para obter os melhores
+                    resultados. Caso não encontre o livro em nossa base de dados, nos envie um e-mail para que possamos
+                    ajustar a página e incluir esses dados.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Informações de copyright e desenvolvedor -->
+        <p>2024 - Biblioteca Virtual. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank">Jeferson Paz</a></p>
+        <!-- Links para redes sociais -->
+        <p>Siga-nos nas redes sociais:</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/jeferson-paz/" target="_blank" class="social-link linkedin"><i
+                        class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jeferson.paz_/" target="_blank" class="social-link instagram"><i
+                        class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.threads.net/jeferson.paz_/" target="_blank" class="social-link threads"><i
+                        class="fas fa-at"></i> Threads</a></li>
+        </ul>
+        <!-- Avaliação com estrelas -->
+        <p>Avaliação:
+            <span class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </span>
+        </p>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
