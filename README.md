@@ -10,14 +10,13 @@
 7. [Estilo CSS](#estilo-css)
 8. [Como Personalizar](#como-personalizar)
 9. [Captura de Tela](#captura-de-tela)
-10. [Vídeo do Projeto](#vídeo-do-projeto)
-11. [Autor](#autor)
+10. [Autor](#autor)
 
 ## Descrição do Projeto
-Este projeto web tem como objetivo criar uma Biblioteca Virtual interativa, permitindo a pesquisa e visualização de livros de forma intuitiva. 📚 
+Este projeto web tem como objetivo criar uma Biblioteca Virtual interativa, permitindo a pesquisa e visualização de livros de forma intuitiva. 📚
 A página inclui um cabeçalho elegante, um campo de busca para encontrar livros, e um rodapé com links para minhas redes sociais.
 
-![Imagem do Projeto](img/biblioteca.png)
+![Imagem do Projeto](img/projeto.png)
 
 ## Estrutura de Arquivos
 A estrutura de arquivos do projeto é organizada da seguinte forma:
@@ -73,13 +72,7 @@ O arquivo `style.css` define os estilos usados na página. Aqui estão alguns de
 ## Captura de Tela
 **Figura 1**: Captura de tela mostrando a interface do projeto Biblioteca Virtual. 📸
 
-![Imagem do Projeto](img/biblioteca.png)
-
-## Vídeo do Projeto
-
-Assista a uma demonstração do projeto em vídeo:
-
-[![Assistir ao Vídeo](img/library-background.jpg)](video/biblioteca-virtual.mp4)
+![Imagem do Projeto](img/projeto.png)
 
 ## Autor
 **Jeferson Paz** 👋
