@@ -1,3 +1,20 @@
+Claro, Sr. Jeff! Vamos revisar e ajustar o markdown com base nas informações do seu projeto da Biblioteca Virtual e o código HTML fornecido. Aqui estão algumas correções e melhorias:
+
+### Correções e Melhorias no Markdown
+
+1. **Descrição do Projeto**: Atualizei o texto para refletir melhor as funcionalidades descritas no código.
+
+2. **Estrutura de Arquivos**: Ajustei o nome da fonte e o caminho da imagem de fundo.
+
+3. **Configuração e Instalação**: Corrigi os URLs de clonagem e navegação, e adicionei o arquivo `index.html`.
+
+4. **Estilo CSS**: Corrigi a descrição da fonte e do background.
+
+5. **Como Personalizar**: Atualizei as instruções para refletir corretamente a personalização da fonte e da imagem de fundo.
+
+### Markdown Ajustado
+
+```markdown
 # Projeto Biblioteca Virtual
 
 ## Índice
@@ -24,8 +41,8 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
 - `index.html`: Contém a estrutura principal da página. 📄
 - `style.css`: Contém os estilos CSS aplicados ao projeto. 🎨
 - `script.js`: Script JavaScript para funcionalidades interativas. 💻
-- `/fonts/Library.ttf`: Fonte personalizada usada para os textos da página. 🔤
-- `/img/library-background.jpg`: Imagem de fundo usada na página. 🖼️
+- `fonts/sans-serif`: Fonte personalizada usada para os textos da página. 🔤
+- `/img/background.jpg`: Imagem de fundo usada na página. 🖼️
 
 ## Configuração e Instalação
 
@@ -44,7 +61,7 @@ Após seguir os passos de instalação, basta abrir o arquivo `https://jeferson-
 
 - **Busca de Livros:** Utilize a barra de busca para procurar livros na biblioteca virtual. 🔍
 - **Visualização de Detalhes:** Clique nos resultados para ver mais detalhes sobre cada livro. 📖
-- **Redes Sociais:** Use os ícones no rodapé para visitar minhas redes sociais. 🌟
+- **Redes Sociais:** Use os ícones no rodapé para visitar minhas redes sociais e portfólio. 🌟
 
 ## Tecnologias Utilizadas
 - **HTML5:** Estrutura da página. 🌐
@@ -55,18 +72,18 @@ Após seguir os passos de instalação, basta abrir o arquivo `https://jeferson-
 ## Funcionalidades
 - **Animação de Título:** O título "Biblioteca Virtual" é animado usando a propriedade `@keyframes`. ✨
 - **Busca Interativa:** Implementação de uma barra de busca para pesquisa de livros com feedback em tempo real. 🔍
-- **Rodapé com Links:** Ícones de redes sociais com links para LinkedIn, Instagram, Threads e portfólio pessoal. 🌐
+- **Rodapé com Links:** Ícones de redes sociais com links para LinkedIn, Instagram, Threads. 🌐
 
 ## Estilo CSS
 O arquivo `style.css` define os estilos usados na página. Aqui estão alguns detalhes importantes:
 
-- **Fonte Customizada:** Usada a fonte Library, que é carregada com a diretiva `@font-face`. 🔤
+- **Fonte Customizada:** Usada a fonte `sans-serif`, que é carregada com a diretiva `@import url`. 🔤
 - **Background:** A imagem de fundo é definida com `background-image`, ajustada para cobrir toda a tela e centralizada com `background-size: cover` e `background-position: center`. 🌄
 - **Animação de Título:** A animação é criada com a propriedade `@keyframes moveText`, que faz o título se mover horizontalmente. 🎢
 
 ## Como Personalizar
-- **Alterar a Fonte:** Substitua `Library.ttf` na pasta `fonts` por outra fonte de sua preferência e atualize o CSS no `@font-face`. 🔤
-- **Imagem de Fundo:** Substitua `library-background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
+- **Alterar a Fonte:** Substitua `sans-serif` no Estilo global `font-family` por outra fonte de sua preferência e atualize o CSS no `@import url`. 🔤
+- **Imagem de Fundo:** Substitua `background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
 - **Redes Sociais:** Edite os links dos ícones no rodapé para redirecionar para suas próprias redes sociais. 🌐
 
 ## Captura de Tela
