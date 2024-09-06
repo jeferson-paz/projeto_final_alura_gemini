@@ -24,7 +24,7 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
 - `index.html`: Contém a estrutura principal da página. 📄
 - `style.css`: Contém os estilos CSS aplicados ao projeto. 🎨
 - `script.js`: Script JavaScript para funcionalidades interativas. 💻
-- `/fonts/sans-serif`: Fonte personalizada usada para os textos da página. 🔤
+- `fonts sans-serif`: Fonte personalizada usada para os textos da página. 🔤
 - `/img/background.jpg`: Imagem de fundo usada na página. 🖼️
 
 ## Configuração e Instalação
