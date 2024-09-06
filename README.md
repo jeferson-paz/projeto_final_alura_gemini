@@ -60,13 +60,13 @@ Após seguir os passos de instalação, basta abrir o arquivo `https://jeferson-
 ## Estilo CSS
 O arquivo `style.css` define os estilos usados na página. Aqui estão alguns detalhes importantes:
 
-- **Fonte Customizada:** Usada a fonte Library, que é carregada com a diretiva `@font-face`. 🔤
+- **Fonte Customizada:** Usada a fonte sans-serif, que é carregada com a diretiva `@import url`. 🔤
 - **Background:** A imagem de fundo é definida com `background-image`, ajustada para cobrir toda a tela e centralizada com `background-size: cover` e `background-position: center`. 🌄
 - **Animação de Título:** A animação é criada com a propriedade `@keyframes moveText`, que faz o título se mover horizontalmente. 🎢
 
 ## Como Personalizar
-- **Alterar a Fonte:** Substitua `Library.ttf` na pasta `fonts` por outra fonte de sua preferência e atualize o CSS no `@font-face`. 🔤
-- **Imagem de Fundo:** Substitua `library-background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
+- **Alterar a Fonte:** Substitua `ans-serif` no Estilos globais `font-family` por outra fonte de sua preferência e atualize o CSS no `@import url`. 🔤
+- **Imagem de Fundo:** Substitua `background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
 - **Redes Sociais:** Edite os links dos ícones no rodapé para redirecionar para suas próprias redes sociais. 🌐
 
 ## Captura de Tela
