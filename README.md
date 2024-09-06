@@ -24,8 +24,8 @@ A estrutura de arquivos do projeto é organizada da seguinte forma:
 - `index.html`: Contém a estrutura principal da página. 📄
 - `style.css`: Contém os estilos CSS aplicados ao projeto. 🎨
 - `script.js`: Script JavaScript para funcionalidades interativas. 💻
-- `fonts/sans-serif`: Fonte personalizada usada para os textos da página. 🔤
-- `/img/background.jpg`: Imagem de fundo usada na página. 🖼️
+- `/fonts/Library.ttf`: Fonte personalizada usada para os textos da página. 🔤
+- `/img/library-background.jpg`: Imagem de fundo usada na página. 🖼️
 
 ## Configuração e Instalação
 
@@ -60,13 +60,13 @@ Após seguir os passos de instalação, basta abrir o arquivo `https://jeferson-
 ## Estilo CSS
 O arquivo `style.css` define os estilos usados na página. Aqui estão alguns detalhes importantes:
 
-- **Fonte Customizada:** Usada a fonte `sans-serif`, que é carregada com a diretiva `@import url`. 🔤
+- **Fonte Customizada:** Usada a fonte Library, que é carregada com a diretiva `@font-face`. 🔤
 - **Background:** A imagem de fundo é definida com `background-image`, ajustada para cobrir toda a tela e centralizada com `background-size: cover` e `background-position: center`. 🌄
 - **Animação de Título:** A animação é criada com a propriedade `@keyframes moveText`, que faz o título se mover horizontalmente. 🎢
 
 ## Como Personalizar
-- **Alterar a Fonte:** Substitua `sans-serif` no Estilo global `font-family` por outra fonte de sua preferência e atualize o CSS no `@import url`. 🔤
-- **Imagem de Fundo:** Substitua `background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
+- **Alterar a Fonte:** Substitua `Library.ttf` na pasta `fonts` por outra fonte de sua preferência e atualize o CSS no `@font-face`. 🔤
+- **Imagem de Fundo:** Substitua `library-background.jpg` na pasta `img` por outra imagem de sua escolha e atualize a propriedade `background-image` no CSS. 🖼️
 - **Redes Sociais:** Edite os links dos ícones no rodapé para redirecionar para suas próprias redes sociais. 🌐
 
 ## Captura de Tela
