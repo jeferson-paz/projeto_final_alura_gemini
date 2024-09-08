@@ -16,7 +16,7 @@
 Este projeto web tem como objetivo criar uma Biblioteca Virtual interativa, permitindo a pesquisa e visualização de livros de forma intuitiva. 📚
 A página inclui um cabeçalho elegante com um GIF animado, um campo de busca para encontrar livros e um rodapé com links para minhas redes sociais.
 
-## Acesse a página aqui: [projeto final Alura - Gemini](https://jeferson-paz.github.io/projeto_final_alura_gemini/)
+## Acesse a página aqui: <a href="https://jeferson-paz.github.io/projeto_final_alura_gemini/" target="_blank">projeto final Alura - Gemini</a>
 
 ![Imagem do Projeto](img/projeto.png)
 
